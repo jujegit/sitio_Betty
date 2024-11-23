@@ -2,12 +2,25 @@
 body {
     font-family: Arial, sans-serif;
     color: #fff;
-    margin: 0;
+   /* margin: 0;*/
     padding: 0;
     background-color: #1d1d1f;
     max-width: 1300px;
-    margin: auto;
+   /* margin: auto; */
 }
+/* Header*/
+
+header {
+
+    height: 100px;
+    
+
+
+}
+
+
+
+
 
 /* Navegación */
 header nav ul {
@@ -76,6 +89,34 @@ header nav ul li a:hover {
 }
 
 /* Sección de contenido */
+
+
+
+/* GALERIA NO TOCAR */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.gallery img {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #333;
+}
+/* FIN DE GALERIA NO TOCAR*/
+
+
 
 
 /* Pie de página */
