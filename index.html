@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo soy Betty, la fea</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Betty la fea</title>
 </head>
@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a>
-                    <ul>
+                    <ul class="submenu">
                         <li><a href="personajes.html#principales">Principales</a></li>
                         <li><a href="personajes.html#secundarios">Secundarios</a></li>
                     </ul>
@@ -39,22 +39,24 @@
         
     </header>
         <section>
-            <article>
+            <article class="imagen_fondo" style="background-image: url('imagenes/foto_fondo.jpg');">
                 
-                <div class="imagen_fondo" > 
-                </div> 
+                 
+                
                 <h1>Yo soy Betty, la fea</h1>
-                <p>Un sitio dedicado a la telenovela más famosa de Colombia.</p> 
+                 
 
             </article>
-
+            <div class="sub_paginas">
+                <h2>Un sitio dedicado a la telenovela más famosa de Colombia</h2>
+            </div>
             <article>
                 <div class="contenido_secundario">
-                <div>
+                <div class="imagen">
                     <img src="imagenes/foto_inicio_1.jpg" alt=" ">
                 </div>
-                <div>
-                    <h2>Introducción</h2>  
+                <div class="texto">
+                    <h3>Introducción</h3>  
                     <p>Yo soy Betty, la fea sigue la historia de Beatriz Pinzón, una economista brillante pero poco agraciada físicamente, que lucha por encontrar su lugar en el mundo superficial de la moda en la empresa Ecomoda. A lo largo de la serie, Betty demuestra su capacidad y valor como profesional, al tiempo que su vida personal se ve envuelta en una serie de malentendidos románticos y cambios inesperados.</p>
                 </div>
             </div>
@@ -62,11 +64,11 @@
             
             <article>
                 <div class="contenido_secundario">
-                <div>
+                <div class="imagen">
                     <img src="imagenes/foto_inicio_2.jpg" alt=" ">
                 </div>
-                <div>
-                    <h2>Críticas</h2>  
+                <div class="texto">
+                    <h3>Críticas</h3>  
                     <p>La serie ha sido adaptada en más de 20 países debido a su éxito y formato flexible.
                      <br>Fue reconocida por el Guinness World Records en 2010 como la telenovela más exitosa de todos los tiempos.
                         
@@ -79,13 +81,15 @@
     
     <!-- Pie de página -->
     <footer>
-        <div>
+        <div class="social-icons">
             <img src="imagenes/facebook.png" alt=" ">
             <img src="imagenes/youtube.png" alt=" ">
             <img src="imagenes/instagram.png" alt=" ">
             <img src="imagenes/twitter.png" alt=" ">
         </div>
-       <div> <p>&copy; 2024 - Todos los derechos reservados</p> </div>
+       <div class="copyright"> 
+        <p>&copy; 2024 - Todos los derechos reservados</p> 
+       </div>
     </footer>
 
 </body>

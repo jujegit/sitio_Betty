@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo soy Betty, la fea</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Contacto</title>
 </head>
@@ -25,7 +25,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a>
-                    <ul>
+                    <ul class="submenu">
                         <li><a href="personajes.html#principales">Principales</a></li>
                         <li><a href="personajes.html#secundarios">Secundarios</a></li>
                     </ul>
@@ -39,15 +39,10 @@
         
     </header>
         <section>
-            <article>
+            <article class="imagen_fondo" style="background-image: url('imagenes/fondo_contacto.jpg');">
                 
-                <div class="imagen_fondo" > 
-
-                    <h1>Contacto</h1>
-                </div> 
+                    <h1 class="tit_generales">Contacto</h1>
                 
-                
-
             </article>
 
                 
@@ -68,13 +63,15 @@
     
     <!-- Pie de página -->
     <footer>
-        <div>
+        <div class="social-icons">
             <img src="imagenes/facebook.png" alt=" ">
             <img src="imagenes/youtube.png" alt=" ">
             <img src="imagenes/instagram.png" alt=" ">
             <img src="imagenes/twitter.png" alt=" ">
         </div>
-       <div> <p>&copy; 2024 - Todos los derechos reservados</p> </div>
+       <div class="copyright"> 
+        <p>&copy; 2024 - Todos los derechos reservados</p> 
+       </div>
     </footer>
 
 </body>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo soy Betty, la fea</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Personajes</title>
 </head>
@@ -25,9 +25,9 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a>
-                    <ul>
-                        <li><a href="personajes.html#principales">Principales</a></li>
-                        <li><a href="personajes.html#secundarios">Secundarios</a></li>
+                    <ul class="submenu">
+                        <li><a href="#principales">Principales</a></li>
+                        <li><a href="#secundarios">Secundarios</a></li>
                     </ul>
                 </li>
                 <li><a href="galeria.html">Galería</a></li>
@@ -39,24 +39,24 @@
         
     </header>
         <section>
-            <article>
+            <article class="imagen_fondo" style="background-image: url('imagenes/fondo_personajes.jpg');">
                 
-                <div class="imagen_fondo" > 
-                </div> 
-                <h1>Personajes</h1>
+                <h1 class="tit_generales">Personajes</h1>
 
             </article>
+
+
             <div id="principales">
                 <h2>Principales</h2>
 
                 <article>
                     
                     <div class="contenido_secundario">
-                    <div>
+                    <div class="imagen">
                     <img src="imagenes/personaje_principal_1.jpg" alt=" ">
                      </div>
-                     <div>
-                    <h2>Beatriz Pinzón Solano</h2>  
+                     <div class="texto">
+                    <h3>Beatriz Pinzón Solano</h3>  
                     <p>Es la protagonista, una mujer inteligente y capaz, pero con una apariencia que no encaja en los estándares convencionales de belleza.</p>
                     </div>
                     </div>
@@ -65,11 +65,11 @@
                 <article>
                     
                     <div class="contenido_secundario">
-                    <div>
+                    <div class="imagen">
                     <img src="imagenes/personaje_principal_2.jpg" alt=" ">
                      </div>
-                     <div>
-                    <h2>Armando Mendoza</h2>  
+                     <div class="texto">
+                    <h3>Armando Mendoza</h3>  
                     <p>Director creativo de Ecomoda, inicialmente frío, pero se enamora de Betty.</p>
                     </div>
                     </div>
@@ -78,11 +78,11 @@
                 <article>
                     
                     <div class="contenido_secundario">
-                        <div>
+                        <div class="imagen">
                         <img src="imagenes/personaje_principal_3.jpg" alt=" ">
                          </div>
-                         <div>
-                        <h2>Marcela Valencia</h2>  
+                         <div class="texto">
+                        <h3>Marcela Valencia</h3>  
                         <p>Prometida de Armando, una mujer fuerte y determinada, pero celosa.</p>
                         </div>
                         </div>
@@ -91,11 +91,11 @@
                 <article>
                     
                     <div class="contenido_secundario">
-                        <div>
+                        <div class="imagen">
                         <img src="imagenes/personaje_principal_4.jpg" alt=" ">
                          </div>
-                         <div>
-                        <h2>Patricia Fernández</h2>  
+                         <div class="texto">
+                        <h3>Patricia Fernández</h3>  
                         <p>Rival de Betty en la oficina, conocida por su superficialidad y la frase "¡Desssssgraciada!"</p>
                         </div>
                         </div>
@@ -108,11 +108,11 @@
                 <article>
                     
                     <div class="contenido_secundario">
-                        <div>
+                        <div class="imagen">
                         <img src="imagenes/personaje_secundario_1.jpg" alt=" ">
                          </div>
-                         <div>
-                        <h2>Mario Calderón</h2>  
+                         <div class="texto">
+                        <h3>Mario Calderón</h3>  
                         <p>El mejor amigo y cómplice de Armando Mendoza, conocido por ser mujeriego y siempre meterse en problemas.</p>
                         </div>
                         </div>
@@ -121,11 +121,11 @@
                 <article>
                     
                     <div class="contenido_secundario">
-                        <div>
+                        <div class="imagen"> 
                         <img src="imagenes/personaje_secundario_2.jpg" alt=" ">
                          </div>
-                         <div>
-                        <h2>Nicolás Mora</h2>  
+                         <div class="texto">
+                        <h3>Nicolás Mora</h3>  
                         <p>El amigo inseparable de Betty, con quien comparte sus sueños y confidencias, a pesar de su torpeza y extravagancia.</p>
                         </div>
                         </div>
@@ -134,11 +134,11 @@
                 <article>
                     
                     <div class="contenido_secundario">
-                        <div>
+                        <div class="imagen">
                         <img src="imagenes/personaje_secundario_3.jpg" alt=" ">
                          </div>
-                         <div>
-                        <h2>Hugo Lombardi</h2>  
+                         <div class="texto">
+                        <h3>Hugo Lombardi</h3>  
                         <p>El excéntrico diseñador de Ecomoda, famoso por su humor ácido y sus constantes enfrentamientos con Patricia y Marcela.</p>
                         </div>
                         </div>
@@ -147,11 +147,11 @@
                 <article>
                     
                     <div class="contenido_secundario">
-                        <div>
+                        <div class="imagen">
                         <img src="imagenes/personaje_secundario_4.jpg" alt=" ">
                          </div>
-                         <div>
-                        <h2>Inesita (Inés Ramírez)</h2>  
+                         <div class="texto">
+                        <h3>Inesita (Inés Ramírez)</h3>  
                         <p> La costurera de Ecomoda, amable y sabia, que actúa como una figura maternal para Betty y Hugo.</p>
                         </div>
                         </div>
@@ -174,13 +174,15 @@
     
     <!-- Pie de página -->
     <footer>
-        <div>
+        <div class="social-icons">
             <img src="imagenes/facebook.png" alt=" ">
             <img src="imagenes/youtube.png" alt=" ">
             <img src="imagenes/instagram.png" alt=" ">
             <img src="imagenes/twitter.png" alt=" ">
         </div>
-       <div> <p>&copy; 2024 - Todos los derechos reservados</p> </div>
+       <div class="copyright"> 
+        <p>&copy; 2024 - Todos los derechos reservados</p> 
+       </div>
     </footer>
 
 </body>
