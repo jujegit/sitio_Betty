@@ -299,20 +299,53 @@ textarea:focus {
 }
 
 /* Estilo para el botón */
+.contenedor {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Botón de Mostrar/Ocultar */
 button {
-    padding: 12px 20px;
-    background-color: #655959;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #ffffff;
+    color: rgb(156, 156, 156);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #494a4b;
+    background-color: #414141;
 }
+
+/* Estilos del contenido oculto */
+
+.contenido {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: none; 
+    
+    border: 2px solid #ffffff;
+}
+
+.contenido p{
+
+    text-align: left;
+}
+.contenido h3{
+
+    text-align: left;
+}
+
+
+
 
 /* Para dispositivos móviles */
 @media (max-width: 600px) {
@@ -334,29 +367,6 @@ button:hover {
         font-size: 14px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -436,42 +446,6 @@ footer .copyright p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    color: #888;
-    font-size: 0.9em;
-    flex-direction: column;
-    display: flex;
-    height: 200px;
-}
-
-footer img{
-
-    max-width: 2rem;
-    width: 100%;
-    height: auto;
-    margin-right: 15px;
-
-
-}*/
 
 /* Responsivo para móviles */
 @media (max-width: 576px) {

@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Betty la fea</title>
+    
+
 </head>
 <body>
 
@@ -51,7 +53,7 @@
                 <h2>Un sitio dedicado a la telenovela más famosa de Colombia</h2>
             </div>
             <article>
-                <div class="contenido_secundario">
+                <div class="contenido_secundario" style="margin-bottom: 50px;">
                 <div class="imagen">
                     <img src="imagenes/foto_inicio_1.jpg" alt=" ">
                 </div>
@@ -60,22 +62,40 @@
                     <p>Yo soy Betty, la fea sigue la historia de Beatriz Pinzón, una economista brillante pero poco agraciada físicamente, que lucha por encontrar su lugar en el mundo superficial de la moda en la empresa Ecomoda. A lo largo de la serie, Betty demuestra su capacidad y valor como profesional, al tiempo que su vida personal se ve envuelta en una serie de malentendidos románticos y cambios inesperados.</p>
                 </div>
             </div>
-            </article>
+
+        </article>
+            <div class="contenedor">
+                <button id="toggleBtn">Ver más</button>
+        
+                <div id="contenido" class="contenido">
+                    
+                    <article>
+                        <div class="contenido_secundario">
+                        <div class="imagen">
+                            <img src="imagenes/foto_inicio_2.jpg" alt=" ">
+                        </div>
+                        <div class="texto">
+                            <h3>Críticas</h3>  
+                            <p>La serie ha sido adaptada en más de 20 países debido a su éxito y formato flexible.
+                             <br>Fue reconocida por el Guinness World Records en 2010 como la telenovela más exitosa de todos los tiempos.
+                                
+                            </p>
+                        </div>
+                        </div>
+                    </article>
+
+
+
+
+
+
+                </div>
+            </div>
             
-            <article>
-                <div class="contenido_secundario">
-                <div class="imagen">
-                    <img src="imagenes/foto_inicio_2.jpg" alt=" ">
-                </div>
-                <div class="texto">
-                    <h3>Críticas</h3>  
-                    <p>La serie ha sido adaptada en más de 20 países debido a su éxito y formato flexible.
-                     <br>Fue reconocida por el Guinness World Records en 2010 como la telenovela más exitosa de todos los tiempos.
-                        
-                    </p>
-                </div>
-                </div>
-            </article>
+
+            
+            
+           
     
         </section>
     
@@ -91,6 +111,21 @@
         <p>&copy; 2024 - Todos los derechos reservados</p> 
        </div>
     </footer>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const button = document.getElementById("toggleBtn");
+        const content = document.getElementById("contenido");
+
+        button.addEventListener("click", function() {
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";  // Muestra el contenido
+            } else {
+                content.style.display = "none";   // Oculta el contenido
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
