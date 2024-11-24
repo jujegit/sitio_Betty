@@ -252,6 +252,88 @@ h2{
 }
 
 
+/* Estilo general para el formulario */
+form {
+    width: 100%;
+    max-width: 600px; /* Limita el tamaño máximo */
+    margin: 0 auto; /* Centra el formulario en la página */
+    padding: 30px;
+    background-color: #b4aaaa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Titulo del formulario */
+.comentario {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #fffafa;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Estilo para los inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Estilo para el botón */
+button {
+    padding: 12px 20px;
+    background-color: #655959;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #494a4b;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+    
+    h2.comentario {
+        font-size: 20px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 14px;
+    }
+}
 
 
 
