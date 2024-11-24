@@ -194,6 +194,67 @@ h2{
 
 
 
+/*Noticias*/
+/* Estilos para la sección de noticias */
+/* Estilo para la cuadrícula de noticias */
+/* Grid para noticias */
+/* Estilo para la cuadrícula de noticias */
+.noticias-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px; /* Espacio entre las columnas y las filas */
+    margin: 20px;
+}
+
+/* Estilo para cada artículo dentro de la cuadrícula */
+.noticias-grid article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Distribución interna del contenido dentro del artículo */
+.noticias-grid .noti_secundario {
+    display: flex;
+    gap: 15px;
+    margin:50px
+}
+
+/* Ajustes para las imágenes */
+.noticias-grid .noti_secundario img {
+    max-width: 100px; /* Ajustar tamaño de imagen */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Títulos y párrafos */
+.noticias-grid .noti_secundario h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.noticias-grid .noti_secundario p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0 0;
+}
+
+
+
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
 
 
 
