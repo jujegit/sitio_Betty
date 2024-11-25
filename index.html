@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Betty la fea</title>
     
-
 </head>
 <body>
 
@@ -23,7 +22,15 @@
             </a>
         </div>
 
+        
+        
+
         <nav class="menu" id="menu">
+            
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="personajes.html">Personajes</a>
@@ -112,20 +119,9 @@
        </div>
     </footer>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const button = document.getElementById("toggleBtn");
-        const content = document.getElementById("contenido");
+<script src="js/script.js"></script>
 
-        button.addEventListener("click", function() {
-            if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "block";  // Muestra el contenido
-            } else {
-                content.style.display = "none";   // Oculta el contenido
-            }
-        });
-    });
-</script>
+
 
 </body>
 </html>

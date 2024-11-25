@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #333;
     background-color: #ffffff;
     max-width: auto;
@@ -245,13 +245,6 @@ h2{
 
 
 
-@media (max-width: 768px) {
-    table {
-        font-size: 0.9rem;
-    }
-}
-
-
 /* Estilo general para el formulario */
 form {
     width: 100%;
@@ -347,26 +340,6 @@ button:hover {
 
 
 
-/* Para dispositivos móviles */
-@media (max-width: 600px) {
-    form {
-        padding: 15px;
-    }
-    
-    h2.comentario {
-        font-size: 20px;
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        font-size: 14px;
-    }
-    
-    button {
-        font-size: 14px;
-    }
-}
 
 
 
@@ -445,18 +418,209 @@ footer .copyright p {
 }
 
 
+.menu.active {
+    display: block; 
+}
+
+.menu-toggle {
+    cursor: pointer; 
+    display: none; 
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px; 
+    height: 3px; 
+    background-color: black; 
+    margin: 5px auto; 
+}
 
 
-/* Responsivo para móviles */
-@media (max-width: 576px) {
-    header nav ul {
+   
+   @media (max-width: 576px) {
+    /* General */
+    body {
+        margin-top: 50px; /* Ajustar espacio del header */
+       
+    }
+    .menu ul {
+        display: none;
         flex-direction: column;
-        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    .hero {
-        padding: 60px 10px;
+
+    .menu ul.active {
+        display: flex;
     }
-    .hero h1 {
-        font-size: 2.5em;
+
+    .menu-toggle {
+        display: block;
+        
+    }
+
+
+    /* Header */
+    header {
+        
+    display: flex;
+        justify-content: space-between; /* Alinea logo y menú hamburguesa en extremos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 10px 20px; /* Espaciado interno */
+        background-color: #ffffff; /* Fondo blanco */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para separar visualmente */
+        z-index: 1000; /* Por encima de otros elementos */
+        position: fixed; /* Fija el header en la parte superior */
+        width: 100%; /* Ocupa todo el ancho */
+       
+        
+
+    }
+    .logo{
+
+       /* width: auto;*/
+        width: 120px; /* Tamaño reducido del logo */
+        height: auto; /* Mantener proporción */
+       
+
+    }
+    header .menu {
+        flex-direction: column; /* Menú en columna */
+        align-items: center;
+        gap: 10px; /* Espaciado entre los enlaces */
+    }
+
+    .menu li a {
+        font-size: 16px; /* Reduce el tamaño del texto */
+        padding: 8px 10px;
+    }
+
+
+    h1 {
+        margin-left: -150px;
+    }
+
+    h2{
+        margin: 40px;
+    }
+
+
+    body, header, .imagen_fondo {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        position: fixed;
+        
+        left: 0;
+        
+        z-index: 1000;
+    }
+
+    .sub_paginas h2{
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+
+
+    /* Imagen con título */
+    .imagen_fondo {
+       
+
+        background-size: contain; /* La imagen se ajustará completamente al contenedor sin recortarse */
+        background-position: center; /* Centra la imagen dentro del contenedor */
+        background-repeat: no-repeat; /* Evita repeticiones */
+        padding: 0; /* Elimina cualquier espacio adicional */
+        width: 100%; /* Ancho completo */
+        /*height: 100vh; /* Altura igual a la ventana */
+        position: relative; /* O "absolute" si quieres que se solape con el header */
+        top: 0;
+        height: 370px;
+
+    }
+
+    .imagen_fondo h1 {
+        font-size: 2rem; /* Reducir tamaño del título */
+        margin-right: 0;
+    }
+
+    .imagen_fondo p {
+        font-size: 1rem; /* Ajustar tamaño del texto */
+        margin-right: 0;
+    }
+
+    /* Contenido secundario */
+    .contenido_secundario {
+        flex-direction: column; /* Cambia el layout a columna */
+        margin: 20px;
+    }
+
+    .contenido_secundario .imagen img {
+        max-width: 100%; /* Imagen ajusta al contenedor */
+        height: auto; /* Mantener proporción */
+    }
+
+    .contenido_secundario .texto h3 {
+        font-size: 24px; /* Ajustar tamaño del título */
+        margin-bottom: 10px;
+    }
+    .contenido_secundario .texto{
+
+        max-width: 400px;
+        margin-bottom: 40px;
+
+    }
+
+    /* Noticias */
+    .noticias-grid {
+        grid-template-columns: 1fr; /* Una columna */
+        gap: 10px;
+    }
+
+    .noticias-grid .noti_secundario img {
+        max-width: 80px; /* Reducir tamaño de imagen */
+    }
+
+    .noticias-grid .noti_secundario h3 {
+        font-size: 16px; /* Reducir tamaño del texto */
+    }
+
+    .noticias-grid .noti_secundario p {
+        font-size: 12px; /* Reducir tamaño del texto */
+    }
+
+    /* Formulario */
+    form {
+        padding: 20px;
+        margin: 20px;
+        max-width: 400px;
+        
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+
+    /* Galería */
+    .gallery img {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+        height: auto; /* Ajustar altura */
+        text-align: center; /* Centrar texto */
     }
 }
+
+
