@@ -340,16 +340,11 @@ button:hover {
 
 
 
-
-
-
-
-
 /* Sección de contenido */
 
 
 
-/* GALERIA NO TOCAR */
+/* GALERIA */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -371,7 +366,6 @@ button:hover {
     transform: scale(1.1);
     border-color: #333;
 }
-/* FIN DE GALERIA NO TOCAR*/
 
 
 
